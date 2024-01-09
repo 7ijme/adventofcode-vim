@@ -1,3 +1,18 @@
+" actual solution
+" set register G to game
+let @y="gg0wvt:\"Gy0d2f "
+:normal @y
+:s/[,;] /\r/g
+:normal Vgg
+:'<,'>s/\(\d\+\) \(\w\).\+/\2\1
+:'<,'>!sort
+:normal! V/b\dNNJ
+:s/\w//g
+:s/ /+/g
+
+
+" notes
+
 qw0wvt:"Gy0d2f 
 :s/[,;] /\r/g
 let @l = line('.')
